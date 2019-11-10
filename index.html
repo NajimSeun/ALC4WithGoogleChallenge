@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<title>Mini App</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="./css/alc-challenge-2.css" rel="stylesheet" >
+	<script src="https://kit.fontawesome.com/13b0b13f22.js"> </script>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+	<div class="card-pay">
+		<header class="header"><span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>Shopping Cart</header>
+	<div data-cart-info>
+		 
+       <div class="items">
+		
+			 
+	</div>
+		<div class="total-container clearfix">
+			<h2 class="total">Total</h2>
+			<h2 class="total-amount"></h2>
+		</div>
+		
+	</div>
+	<div data-credit-card class="mdc-card mdc-card--outlined ">
+		<div class="mdc-card__primary-action">
+			<img data-card-type src="http://placehold.it/120x60.png?text=card" />
+
+			<div data-cc-digits>
+				<input id="firstInput" type="text" placeholder="----" size="4" maxlength="4" />
+				<input id="secondInput" type="text" placeholder="----" size="4" maxlength="4" />
+				<input id="thirdInput" type="text" placeholder="----" size="4" maxlength="4" />
+				<input id="fourthInput" type="text" placeholder="----" size="4" maxlength="4" />
+				<span ><i  class="card-num-visibility fas fa-eye"></i></span>
+			</div>
+			<div data-cc-info>
+				<input id="nameInput" type="text" size="20" placeholder="Name Surname" maxlength="20" />
+				<input id="expiryDateInput" type="text" size="6" placeholder="MM/YY" maxlength="6" />
+			</div>
+		</div>
+	</div>
+	<button class="mdc-button" data-pay-btn>Pay Now</button>
+	</div>
+	</div>
+	
+
+	<script src="./js/alc-challenge-2.js"></script>
+		
+	
+</body>
+
+</html>

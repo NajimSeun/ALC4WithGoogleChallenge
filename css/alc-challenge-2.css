@@ -1,0 +1,213 @@
+
+*{
+    box-sizing: border-box ;
+}
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: #ffffff;
+    color: #dda0dd;
+    font-family: 'Roboto', sans-serif
+}
+
+.card-pay{
+   width: 33%;
+   margin: auto;
+   border: 0.5px solid #6F2232 ;
+   border-radius: 10px;
+   background-color: #ffffff;
+}
+[data-cart-info],
+[data-credit-card] {
+    transform: scale(0.92); 
+    margin: 20px auto;
+}
+
+[data-cc-info] input:focus,
+[data-cc-digits] input:focus {
+    outline: none;
+}
+
+.mdc-card__primary-action,
+.mdc-card__primary-action:hover {
+    cursor: auto;
+     
+    min-height: inherit;
+}
+
+[data-credit-card] [data-card-type] {
+    transition: width 1.5s;
+    margin-left: calc(100% - 130px);
+}
+
+[data-credit-card].is-visa {
+    background: linear-gradient(135deg, #622774 0%, #c53364 100%);
+}
+
+[data-credit-card].is-mastercard {
+    background: linear-gradient(135deg, #65799b 0%, #5e2563 100%);
+}
+
+.is-visa [data-card-type],
+.is-mastercard [data-card-type] {
+    width: auto;
+}
+
+input.is-invalid,
+.is-invalid input {
+    text-decoration: line-through;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.mdc-typography--headline4 span {
+    display: inline-block;
+}
+
+/* Add Your CSS From Here */
+
+.mdc-typography--headline4 span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+
+}
+
+.material-icons {
+    font-size: 20px;  
+     
+    
+}
+
+[data-credit-card] {
+    width: 100%;
+    margin: auto ;
+    min-height: 240px;
+    border-radius: 10px;
+    background-color: #708090;
+}
+
+[data-card-type] {
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+
+[data-cc-digits] {
+    margin-top: 0.5em;
+    padding: 5px 5% ;
+}
+
+[data-cc-info] {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+[data-cc-info] input {
+    color: #dda0dd;
+    
+    font-size: 1.2em;
+    border: 0px;
+    background-color: transparent;
+}
+
+[data-cc-digits] input {
+    color: #dda0dd;
+    font-size: 2em;
+    line-height: 2em;
+    border: 0px;
+    background-color: transparent;
+    margin-right: 0.3em ;  
+    /**###################    HELLO   OOOOOOOOO NEW CODE**/
+     width: 20% ;
+    /**###################    HELLO   OOOOOOOOO NEW CODE**/
+}
+
+#expiryDateInput {
+    float: right;
+    padding-right: 10px;
+}
+
+[data-pay-btn] {
+    width:80%;
+    display: block ;
+    border: 1px solid;
+    bottom: 20px;
+    margin: 20px auto ;
+    /**background-color: #deb887; **/
+    background: linear-gradient(135deg, #778899 0%, #8b008b 100%);
+    height: 35px;
+    border-radius:  10px;
+    font-size: 1em;
+    
+    color: inherit ;
+}
+
+[data-pay-btn]:focus{
+    outline: none ;
+}
+[data-pay-btn]:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #8b008b 0%, #778899 100%);
+
+}
+[data-pay-btn]:active{
+    border: 2px solid ;
+}
+.items-container .item {
+    float: left;
+     
+
+}
+
+.items-container .qty{
+    float: right ;
+    margin-right: 40px;
+}
+.items-container .item-price{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before{
+    
+    content: "";
+    display:table ;
+}
+.clearfix::after{
+    clear: both ;
+}
+
+.clearfix{
+    clear: both;
+    zoom: 1;
+}
+
+.total-container .total {
+   float: left
+}
+
+.total-container .total-amount {
+    float: right;
+ }
+ .header{
+     margin: 0px;
+     height: 50px ;
+     font-size: 2em;
+     text-align: center;
+     /** background-color: #faedb7; **/
+    border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     background: linear-gradient(135deg, #778899 0%, #8b008b 100%);
+     padding-top: 4px;
+     
+ }
+ .cart-icon{
+     padding-right: 20px;
+ }
+
+ .card-num-visibility:hover{
+     cursor: pointer;
+ }
